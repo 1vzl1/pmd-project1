@@ -12,43 +12,52 @@
     <style>
       :host {
         display: block;
-        color: white;
+        color: black;
         width: 256px;
       }
       
       paper-button{
       	font-size: 12px;
-			margin-left:32px;
+			margin-left:9px;
 			background-color: white;
 			color: black;      
       }
     </style>
     <style is="custom-style">
 			paper-input, paper-textarea{
-				--secondary-text-color: white;
+				--secondary-text-color: black;
 				--paper-input-container-label: {
 					font-size: 12px;
 				}
-				--primary-text-color: white;
-				--primary-color: white;
+				--primary-text-color: black;
+				--primary-color: black;
 			}    
 
 	</style>
     
-    <paper-input label="Search Keywords" type="search">
+  <!--  <paper-input label="Search Keywords" type="search">
     	<paper-icon-button prefix icon="search"></paper-icon-button>
   		<paper-icon-button suffix icon="clear"></paper-icon-button>
 	</paper-input>
+  -->
 	
-	<paper-textarea label="Selection">	
+	<paper-textarea label="Selections:">	
 	</paper-textarea><br>
 	
 	<paper-button raised>View Details</paper-button>
 	
-	<paper-input label="Filters" disabled></paper-input>
+  <paper-textarea label="Change Your View:">  
+  </paper-textarea><br>
+
+  <paper-textarea label="MultiBox">
+  </paper-textarea><br>
+
+	<!--
+  <paper-input label="Filters" disabled></paper-input>
 	
 	<paper-input label="MultiBox" disabled></paper-input>
-	
+	-->
+
 	<paper-input label="Age Bucket" type="search">
 	<paper-icon-button suffix icon="search"></paper-icon-button>
 	</paper-input>
